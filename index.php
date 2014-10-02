@@ -22,7 +22,9 @@
       <script src="js/html5shiv/html5shiv.js"></script>
     <![endif]-->
     <link href="css/custom.css" rel="stylesheet">
-    <?php require 'controller/generator.php'?>
+    <?php include("controller/generator.php"); ?>
+
+
 
 
   </head>
