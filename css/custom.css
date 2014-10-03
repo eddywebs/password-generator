@@ -43,9 +43,33 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
+      .password {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 25px;
+        color: #f39c12;
+        font-family: consolas,courier;
+        background-color: #eee;
+        display: inline-block;
+        padding: 10px;
+        //font-weight: 800;
+      }
+
+      .page-header {
+        margin: 0px 0 30px;
+      }
+      .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+        font-weight: bolder;
+      }
+      label {
+        font-weight: bold;
+      }
+
       .container {
         width: auto;
-        max-width: 680px;
+        max-width: 800px;
       }
       .container .credit {
         margin: 20px 0;

@@ -59,24 +59,37 @@
         <div class="page-header">
           <h1>XKCD Password Generator</h1>
         </div>
-        <p class="lead"><?=$password?></p>
+        <p class="password"><?=$password?></p>
 
-        <form>
-
-          <label for='number_of_words'># of Words</label>
-        <input maxlength=1 type='text' name='number_of_words' id='number_of_words' value='9'>  (Max 9)
+        <form class="form-horizontal" role="form">
+         <div class="form-group">
+          <label for='number_of_words' class="control-label"># of Words</label>
+          <input maxlength=1 type='text' class="form-control" name='number_of_words' id='number_of_words'>  (Max 9)
+        </div>
         <br>
-          
-        <input type='checkbox' name='add_number' id='add_number' > 
-        <label for='add_number'>Add a number</label>
+        <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <input type='checkbox' name='add_number' id='add_number'> 
+          <label for='add_number'>Add a number</label>
+        </div>
+        </div>
+        </div>
+        
         <br>
-        <input type='checkbox' name='add_symbol' id='add_symbol' CHECKED> 
-        <label for='add_symbol'>Add a symbol</label>
-
+        <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <input type='checkbox' name='add_symbol' id='add_symbol'> 
+          <label for='add_symbol'>Add a symbol</label>
+        </div>
+        </div>
+        </div>
+        <br/>   
         <input type='submit' class='btn btn-default' value='Generate Password'>
         </form>
         <a href="http://xkcd.com/936/" target="_blank">
-          <img src="password_strength.png" alt="xkcd style password generator">
+          <img src="password_strength.png" alt="xkcd style password generator" width="518" height="421">
         </a>
 </div><!-- Part 1: Wrap/page content ends here -->
 
