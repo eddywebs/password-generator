@@ -12,7 +12,7 @@ I'll be attending my Thursday section with nick to do an in-person demo.
 ## Details for teaching team
 No login required.
 
-The file `word-scrape.php` was used to generate the word list.
+The file `controller/generator.php` does all the logic and password generation.
 
 ## Outside code
 * Bootstrap: http://getbootstrap.com/
