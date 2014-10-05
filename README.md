@@ -7,7 +7,7 @@
 A simple utility for generating [xkcd style passwords](http://xkcd.com/936/).
 
 ## Demo
-I'll be attending my Thursday section with nick to do an in-person demo.
+Demo available at: [http://youtu.be/poRF-NYEES4](http://youtu.be/poRF-NYEES4).
 
 ## Details for teaching team
 No login required.

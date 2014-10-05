@@ -1,12 +1,15 @@
 <?php
-error_reporting(-1);
-ini_set('display_errors', 'On');
+// error_reporting(-1);
+// ini_set('display_errors', 'On');
 
-              
-	//$password="hello-world!";
-	if(isset($_GET["number_of_words"])==false)
+function getPassword(){	
+	if(isset($_GET["number_of_words"])==false)//set default number of words
 		$_GET["number_of_words"]=4;
-	 //set default number of words
+	
+	//check max word limit
+	if(isset($_GET["number_of_words"])==true && $_GET["number_of_words"]>9)
+		return "password word limit cannot be > 9";
+	
 	$filename="controller/wordlist.txt";	
 	$words=file($filename);
 	shuffle($words);
@@ -23,12 +26,17 @@ ini_set('display_errors', 'On');
 		$password.=rand(0,9);
 	if(isset($_GET["add_symbol"]) && $_GET["add_symbol"]=="on")
 		$password.=$symbols[0];
+	if(isset($_GET["capitalize_letter"]) && $_GET["capitalize_letter"]=="on")
+		$password=ucfirst($password);
 
+	return $password;
+
+}
 	// if(isset($_GET["add_number"]) && $_GET["add_number"]=="on")
 	// 	echo "add_number is ".$_GET["add_number"]."<br>";
 	// else
 	// 	echo "add_number is off";
 
 	// echo "<br>".$_GET["number_of_words"]."<br>";
-	// echo $password;
+	//echo "<br><br><br><br><br><br><br><br><br><br>".getPassword();//password;
 ?>
